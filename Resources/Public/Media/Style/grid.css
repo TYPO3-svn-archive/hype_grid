@@ -1,0 +1,179 @@
+.csc-container {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.csc-row {
+	width: 100%;
+	/* max-width from TS */
+	min-width: 727px;
+	margin: 0 auto;
+}
+.csc-row .csc-row {
+	min-width: 0;
+}
+
+[class*="csc-span-"] {
+	margin-left: 4.4%;
+	float: left;
+	min-height: 1px;
+	max-width: 100%;
+	position: relative;
+}
+[class*="csc-span-"]:first-child {
+	margin-left: 0;
+}
+
+[class*="csc-span-"] + [class*="csc-span-"]:last-child {
+	float: right;
+}
+[class*="csc-span-"] + [class*="column"].end {
+	float: left;
+}
+
+.csc-row .csc-span-1  { width: 4.3%;    }
+.csc-row .csc-span-2  { width: 13%;     }
+.csc-row .csc-span-3  { width: 21.679%; }
+.csc-row .csc-span-4  { width: 30.37%;  }
+.csc-row .csc-span-5  { width: 39.1%;   }
+.csc-row .csc-span-6  { width: 47.8%;   }
+.csc-row .csc-span-7  { width: 56.5%;   }
+.csc-row .csc-span-8  { width: 65.2%;   }
+.csc-row .csc-span-9  { width: 73.9%;   }
+.csc-row .csc-span-10 { width: 82.6%;   }
+.csc-row .csc-span-11 { width: 91.3%;   }
+.csc-row .csc-span-12 { width: 100%;    }
+
+.csc-row .csc-offset-1  { margin-left: 13.1%; }
+.csc-row .csc-offset-2  { margin-left: 21.8%; }
+.csc-row .csc-offset-3  { margin-left: 30.5%; }
+.csc-row .csc-offset-4  { margin-left: 39.2%; }
+.csc-row .csc-offset-5  { margin-left: 47.9%; }
+.csc-row .csc-offset-6  { margin-left: 56.6%; }
+.csc-row .csc-offset-7  { margin-left: 65.3%; }
+.csc-row .csc-offset-8  { margin-left: 74.0%; }
+.csc-row .csc-offset-9  { margin-left: 82.7%; }
+.csc-row .csc-offset-10 { margin-left: 91.4%; }
+
+.csc-row .csc-align-center { float: none; margin: 0 auto; }
+
+.csc-row .csc-offset-1:first-child  { margin-left: 8.7%;  }
+.csc-row .csc-offset-2:first-child  { margin-left: 17.4%; }
+.csc-row .csc-offset-3:first-child  { margin-left: 26.1%; }
+.csc-row .csc-offset-4:first-child  { margin-left: 34.8%; }
+.csc-row .csc-offset-5:first-child  { margin-left: 43.5%; }
+.csc-row .csc-offset-6:first-child  { margin-left: 52.2%; }
+.csc-row .csc-offset-7:first-child  { margin-left: 60.9%; }
+.csc-row .csc-offset-8:first-child  { margin-left: 69.6%; }
+.csc-row .csc-offset-9:first-child  { margin-left: 78.3%; }
+.csc-row .csc-offset-10:first-child { margin-left: 87.0%; }
+.csc-row .csc-offset-11:first-child { margin-left: 95.7%; }
+
+/* Nicolas Gallagher's micro clearfix */
+.csc-row:before, .csc-row:after { content:""; display:table; }
+.csc-row:after { clear: both; }
+.csc-row { zoom: 1; }
+
+/* media elements */
+.csc-image,
+.csc-default img,
+.csc-default object,
+.csc-default embed {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Image, left of text */
+.csc-orientation-left .csc-imagewrap,
+.csc-orientation-floatleft .csc-imagewrap {
+	margin-right: 2.2%;
+}
+
+/* Image, right of text */
+.csc-orientation-right .csc-imagewrap,
+.csc-orientation-floatright .csc-imagewrap {
+	margin-left: 2.2%;
+}
+
+/* Orientation, center */
+.csc-orientation-centertop .csc-imagewrap,
+.csc-orientation-centerbottom .csc-imagewrap {
+	float: none;
+}
+
+.csc-orientation-righttop .csc-imagewrap,
+.csc-orientation-rightbottom .csc-imagewrap,
+.csc-orientation-lefttop .csc-imagewrap,
+.csc-orientation-leftbottom .csc-imagewrap {
+	margin: 0;
+}
+
+/* Imagewrap */
+.csc-imagewrap {
+	max-width: 47.8%;
+}
+[class*="csc-span-"].csc-imagewrap,
+.csc-content-image .csc-imagewrap {
+	max-width: 100%;
+}
+.csc-orientation-centertop .csc-imagewrap,
+.csc-orientation-centerbottom .csc-imagewrap {
+	max-width: 100%;
+}
+
+[class*="csc-columns-"] .csc-image {
+	margin-right: 0;
+	margin-left: 0;
+}
+.csc-columns-1 .csc-image,
+.csc-columns-1 .csc-column {
+	max-width: 100%;
+}
+.csc-columns-2 .csc-image,
+.csc-columns-2 .csc-column {
+	max-width: 49%;
+	margin-left: 2%
+}
+.csc-columns-3 .csc-image,
+.csc-columns-3 .csc-column {
+	max-width: 32%;
+	margin-left: 2%
+}
+.csc-columns-4 .csc-image,
+.csc-columns-4 .csc-column {
+	max-width: 23.5%;
+	margin-left: 2%;
+}
+.csc-columns-5 .csc-image,
+.csc-columns-5 .csc-column {
+	max-width: 18.4%;
+	margin-left: 2%;
+}
+.csc-columns-6 .csc-image,
+.csc-columns-6 .csc-column {
+	max-width: 15%;
+	margin-left: 2%;
+}
+.csc-columns-7 .csc-image,
+.csc-columns-7 .csc-column {
+	max-width: 12.57142857142856%;
+	margin-left: 2%;
+}
+.csc-columns-8 .csc-image,
+.csc-columns-7 .csc-column {
+	max-width: 10.75%;
+	margin-left: 2%;
+}
+[class*="csc-columns-"] .csc-column-first {
+	margin-left: 0;
+	margin-right: 0;
+}
+.csc-column:first-child {
+	margin-left: 0;
+}
+.csc-column .csc-image {
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}

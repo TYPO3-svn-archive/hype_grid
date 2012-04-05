@@ -1,0 +1,11 @@
+plugin.tx_hypegrid {
+	common {
+		enableGrid = 1
+		enableFitVids = 1
+		enableFitText = 1
+	}
+
+	grid {
+		baseWidth = 1200
+	}
+}

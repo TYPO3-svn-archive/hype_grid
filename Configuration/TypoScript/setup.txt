@@ -1,0 +1,79 @@
+plugin.tx_hypegrid {
+	common {
+		enableGrid = {$plugin.tx_hypegrid.common.enableGrid}
+		enableFitVids = {$plugin.tx_hypegrid.common.enableFitVids}
+		enableFitText = {$plugin.tx_hypegrid.common.enableFitText}
+	}
+
+	grid {
+		baseWidth = {$plugin.tx_hypegrid.grid.baseWidth}
+	}
+}
+
+plugin.tx_hypegrid._CSS_DEFAULT_STYLE (
+	.csc-row {
+		max-width: {$plugin.tx_hypegrid.grid.baseWidth}px;
+	}
+)
+
+
+
+
+
+tt_content {
+	stdWrap {
+		innerWrap {
+			cObject {
+				10 {
+					default {
+						20 = COA
+						20 {
+
+							# Image Columns
+							100 = TEXT
+							100 {
+								stdWrap {
+									noTrimWrap = | csc-columns-||
+									required = 1
+								}
+
+								field = imagecols
+
+								if {
+									isGreaterThan.field = imagecols
+									value = 1
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	image {
+		20 {
+			imageStdWrap {
+				stdWrap {
+					innerWrap {
+						cObject {
+							20 {
+
+								# Grid Columns
+								100 = TEXT
+								100 {
+									stdWrap {
+										noTrimWrap = | csc-span-||
+										fieldRequired = tx_hypegrid_columns
+									}
+
+									field = tx_hypegrid_columns
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
