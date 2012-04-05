@@ -7,6 +7,6 @@ plugin.tx_hypegrid {
 
 	grid {
 		baseWidth = 1200
-		imageMinWidth = 500
+		imageMinWidth = 480
 	}
 }
