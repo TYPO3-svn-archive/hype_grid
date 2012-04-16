@@ -1,3 +1,5 @@
+includeLibs.user_tx_hypegrid_wrapper = EXT:hype_grid/Classes/Utility/class.user_tx_hypegrid_wrapper.php
+
 plugin.tx_hypegrid {
 	common {
 		enableGrid = {$plugin.tx_hypegrid.common.enableGrid}
@@ -23,12 +25,22 @@ tt_content {
 			cObject {
 				10 {
 					default {
-						20 = COA
 						20 {
 
-							# Image Columns
+							# Element Width
 							100 = TEXT
 							100 {
+								stdWrap {
+									noTrimWrap = | csc-span-||
+									fieldRequired = tx_hypegrid_element_width
+								}
+
+								field = tx_hypegrid_element_width
+							}
+
+							# Image Columns
+							110 = TEXT
+							110 {
 								stdWrap {
 									noTrimWrap = | csc-columns-||
 									required = 1
@@ -41,6 +53,37 @@ tt_content {
 									value = 1
 								}
 							}
+
+							# Grid Row (Grid Elements)
+							#110 = TEXT
+							#110 {
+							#	stdWrap {
+							#		noTrimWrap = | ||
+							#		required = 1
+							#	}
+
+							#	value = csc-row
+
+							#	if {
+							#		equals = gridelements_pi1
+							#		value.field = CType
+							#	}
+							#}
+
+							# Default Grid Width (Grid Elements)
+							#120 = COA
+							#120 {
+							#	stdWrap {
+							#		noTrimWrap = | csc-span-||
+							#	}
+
+							#	10 = USER
+							#	10.userFunc = user_tx_hypegrid_wrapper->span
+
+							#	if {
+							#		isTrue.field = tx_gridelements_container
+							#	}
+							#}
 						}
 					}
 				}
@@ -56,15 +99,57 @@ tt_content {
 						cObject {
 							20 {
 
-								# Grid Columns
+								# Grid Width
 								100 = TEXT
 								100 {
 									stdWrap {
 										noTrimWrap = | csc-span-||
-										fieldRequired = tx_hypegrid_columns
+										fieldRequired = tx_hypegrid_image_width
 									}
 
-									field = tx_hypegrid_columns
+									field = tx_hypegrid_image_width
+								}
+
+								# Grid Margin
+								110 = TEXT
+								110 {
+									stdWrap {
+										noTrimWrap = | csc-margin-||
+										fieldRequired = tx_hypegrid_image_margin
+									}
+
+									field = tx_hypegrid_image_margin
+								}
+							}
+						}
+					}
+				}
+			}
+
+			rendering {
+				default {
+					oneImageStdWrap.dataWrap = <figure class="csc-image csc-column###CLASSES###">|</figure>
+				}
+			}
+
+			imageStdWrapNoWidth < .imageStdWrap
+		}
+	}
+
+	gridelements_pi1 {
+		20 {
+			10 {
+				setup {
+					default {
+						columns {
+							default {
+								stdWrap {
+									wrap {
+										cObject = USER
+										cObject {
+											userFunc = user_tx_hypegrid_wrapper->span
+										}
+									}
 								}
 							}
 						}

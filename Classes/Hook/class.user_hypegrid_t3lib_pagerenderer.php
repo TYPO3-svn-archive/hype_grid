@@ -36,14 +36,6 @@ class user_hypegrid_t3lib_pagerenderer {
 					'forceOnTop' => FALSE,
 					'allWrap' => ''
 				),
-				'typo3conf/ext/hype_grid/Resources/Public/Media/Style/responsive.css' => array(
-					'rel' => 'stylesheet',
-					'media' => 'all',
-					'title' => '',
-					'compress' => TRUE,
-					'forceOnTop' => FALSE,
-					'allWrap' => ''
-				),
 			);
 
 			# reorder files

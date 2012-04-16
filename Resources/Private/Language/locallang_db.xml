@@ -6,11 +6,15 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tt_content.tx_hypegrid_columns">Grid width</label>
+			<label index="tt_content.tx_hypegrid_element_width">Element width</label>
+			<label index="tt_content.tx_hypegrid_image_width">Grid width</label>
+			<label index="tt_content.tx_hypegrid_image_margin">Grid margin</label>
 		</languageKey>
 
 		<languageKey index="de" type="array">
-			<label index="tt_content.tx_hypegrid_columns">Rasterbreite</label>
+			<label index="tt_content.tx_hypegrid_element_width">Breite des Elements</label>
+			<label index="tt_content.tx_hypegrid_image_width">Breite am Raster</label>
+			<label index="tt_content.tx_hypegrid_image_margin">Abstand am Raster</label>
 		</languageKey>
 	</data>
 </T3locallang>

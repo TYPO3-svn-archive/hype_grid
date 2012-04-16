@@ -13,6 +13,12 @@ class user_tx_hypegrid_content extends tx_cssstyledcontent_pi1 {
 	  return parent::render_textpic($content, $conf);
    }
 
+   public function render_grid($content, $conf) {
+	  $this->cObj = $this->pObj->cObj;
+
+	  return $content;
+   }
+
    protected function getImgColumnWidths($conf, $colCount, $netW) {
 
 	  $columnWidths = parent::getImgColumnWidths($conf, $colCount, $netW);
