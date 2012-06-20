@@ -1,3 +1,9 @@
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
 .csc-container {
 	margin: 0 auto;
 	padding: 0 20px;
@@ -286,7 +292,7 @@ img {
 		float: left;
 		max-width: 100%;
 	}
-	
+
 	.csc-columns-2 .csc-image,
 	.csc-columns-2 .csc-column,
 	.csc-columns-3 .csc-image,
