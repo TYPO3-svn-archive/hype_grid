@@ -4,12 +4,13 @@
 		<type>database</type>
 		<description>Language labels for database tables/fields belonging to extension 'hype_grid'</description>
 	</meta>
+
 	<data type="array">
 		<languageKey index="default" type="array">
 			<label index="tt_content.tx_hypegrid_element_width">Element width</label>
 			<label index="tt_content.tx_hypegrid_image_width">Grid width</label>
 			<label index="tt_content.tx_hypegrid_image_margin">Grid margin</label>
-
+			<label index="tt_content.tx_hypegrid_text_columns">Text columns</label>
 			<label index="tt_content.tx_hypegrid_hide_desktop">Hide on desktops</label>
 			<label index="tt_content.tx_hypegrid_hide_tablet">Hide on tablets</label>
 			<label index="tt_content.tx_hypegrid_hide_phone">Hide on phones</label>
@@ -19,7 +20,7 @@
 			<label index="tt_content.tx_hypegrid_element_width">Breite des Elements</label>
 			<label index="tt_content.tx_hypegrid_image_width">Breite am Raster</label>
 			<label index="tt_content.tx_hypegrid_image_margin">Abstand am Raster</label>
-
+			<label index="tt_content.tx_hypegrid_text_columns">Text-Spalten</label>
 			<label index="tt_content.tx_hypegrid_hide_desktop">Auf Desktops ausblenden</label>
 			<label index="tt_content.tx_hypegrid_hide_tablet">Auf Tablets ausblenden</label>
 			<label index="tt_content.tx_hypegrid_hide_phone">Auf Smartphones ausblenden</label>
