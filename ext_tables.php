@@ -13,7 +13,7 @@ t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/', 'Hype Grid');
 
 # TABLES
 
-# SysDomain
+# Content
 $columns = array(
 	'tx_hypegrid_element_width' => array(
 		'exclude' => 1,
@@ -89,11 +89,49 @@ $columns = array(
 			),
 		),
 	),
+
+	'tx_hypegrid_hide_desktop' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:hype_grid/Resources/Private/Language/locallang_db.xml:tt_content.tx_hypegrid_hide_desktop',
+		'config' => array(
+			'type' => 'check',
+			'items' => array(
+				'1'	=> array(
+					'0' => 'LLL:EXT:lang/locallang_core.xml:labels.enabled',
+				),
+			),
+		),
+	),
+	'tx_hypegrid_hide_tablet' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:hype_grid/Resources/Private/Language/locallang_db.xml:tt_content.tx_hypegrid_hide_tablet',
+		'config' => array(
+			'type' => 'check',
+			'items' => array(
+				'1'	=> array(
+					'0' => 'LLL:EXT:lang/locallang_core.xml:labels.enabled',
+				),
+			),
+		),
+	),
+	'tx_hypegrid_hide_phone' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:hype_grid/Resources/Private/Language/locallang_db.xml:tt_content.tx_hypegrid_hide_phone',
+		'config' => array(
+			'type' => 'check',
+			'items' => array(
+				'1'	=> array(
+					'0' => 'LLL:EXT:lang/locallang_core.xml:labels.enabled',
+				),
+			),
+		),
+	),
 );
 
 t3lib_div::loadTCA('tt_content');
 t3lib_extMgm::addTCAcolumns('tt_content', $columns, 1);
 t3lib_extMgm::addFieldsToPalette('tt_content', 'imageblock', '--linebreak--,tx_hypegrid_image_width,tx_hypegrid_image_margin');
+t3lib_extMgm::addFieldsToPalette('tt_content', 'visibility', '--linebreak--,tx_hypegrid_hide_desktop,tx_hypegrid_hide_tablet,tx_hypegrid_hide_phone');
 //t3lib_extMgm::addFieldsToPalette('tt_content', 'frames', 'imagecols,tx_hypegrid_element_width');
 
 ?>

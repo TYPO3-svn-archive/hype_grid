@@ -54,6 +54,40 @@ tt_content {
 								}
 							}
 
+							# Device Visibility
+							120 = COA
+							120 {
+								10 = TEXT
+								10 {
+									stdWrap {
+										noTrimWrap = | ||
+										fieldRequired = tx_hypegrid_hide_desktop
+									}
+
+									value = csc-hide-desktop
+								}
+
+								20 = TEXT
+								20 {
+									stdWrap {
+										noTrimWrap = | ||
+										fieldRequired = tx_hypegrid_hide_tablet
+									}
+
+									value = csc-hide-tablet
+								}
+
+								30 = TEXT
+								30 {
+									stdWrap {
+										noTrimWrap = | ||
+										fieldRequired = tx_hypegrid_hide_phone
+									}
+
+									value = csc-hide-phone
+								}
+							}
+
 							# Grid Row (Grid Elements)
 							#110 = TEXT
 							#110 {

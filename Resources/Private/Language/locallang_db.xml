@@ -9,12 +9,20 @@
 			<label index="tt_content.tx_hypegrid_element_width">Element width</label>
 			<label index="tt_content.tx_hypegrid_image_width">Grid width</label>
 			<label index="tt_content.tx_hypegrid_image_margin">Grid margin</label>
+
+			<label index="tt_content.tx_hypegrid_hide_desktop">Hide on desktops</label>
+			<label index="tt_content.tx_hypegrid_hide_tablet">Hide on tablets</label>
+			<label index="tt_content.tx_hypegrid_hide_phone">Hide on phones</label>
 		</languageKey>
 
 		<languageKey index="de" type="array">
 			<label index="tt_content.tx_hypegrid_element_width">Breite des Elements</label>
 			<label index="tt_content.tx_hypegrid_image_width">Breite am Raster</label>
 			<label index="tt_content.tx_hypegrid_image_margin">Abstand am Raster</label>
+
+			<label index="tt_content.tx_hypegrid_hide_desktop">Auf Desktops ausblenden</label>
+			<label index="tt_content.tx_hypegrid_hide_tablet">Auf Tablets ausblenden</label>
+			<label index="tt_content.tx_hypegrid_hide_phone">Auf Smartphones ausblenden</label>
 		</languageKey>
 	</data>
 </T3locallang>
