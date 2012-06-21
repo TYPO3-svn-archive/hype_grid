@@ -154,6 +154,6 @@ t3lib_extMgm::addTCAcolumns('tt_content', $columns, 1);
 t3lib_extMgm::addToAllTCAtypes('tt_content', 'tx_hypegrid_text_columns', '', 'after:rte_enabled');
 t3lib_extMgm::addFieldsToPalette('tt_content', 'imageblock', '--linebreak--,tx_hypegrid_image_width,tx_hypegrid_image_margin');
 t3lib_extMgm::addFieldsToPalette('tt_content', 'visibility', '--linebreak--,tx_hypegrid_hide_desktop,tx_hypegrid_hide_tablet,tx_hypegrid_hide_phone');
-//t3lib_extMgm::addFieldsToPalette('tt_content', 'frames', 'imagecols,tx_hypegrid_element_width');
+t3lib_extMgm::addFieldsToPalette('tt_content', 'frames', 'tx_hypegrid_element_width');
 
 ?>
